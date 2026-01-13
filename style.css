@@ -14,15 +14,15 @@ body {
     user-select: none;
 }
 
-.kub img {
+.kub {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    width: 590px;
+    width: 706.3px;
     margin: auto;
-    height: 590px;
+    height: 706.3px;
     z-index: -1;
     user-select: none;
 }

@@ -7,6 +7,7 @@
 	<meta name="description" content="Partitos"/>
 	<link rel="stylesheet" type="text/css" href="style.css">
     <script src="js/parallax.js"></script>
+	<script src="js/init.js"></script>
 
 </head>
 
@@ -15,14 +16,34 @@
 <div class="logo">
 	<a href="https://www.figma.com/design/BKUROR6WL9VZnJWG6pdGHL/PARTIDOS--dev-?node-id=0-1&t=bqQVKf2MNyGhLgPO-1" target="_blank"><img src="img/logo.svg"></a>
 </div>
-
+<!-- 
 <div class="kub">
 	<img src="img/kub.svg">
+</div> -->
+
+
+<div class="kub" id="scene" class="scene" data-hover-only="true" data-relative-input="true">
+    <div data-depth="1.00">
+        <img src="k1.png">
+    </div>
+    <div data-depth="0.60">
+        <img src="k2.png">
+    </div>
+    <div data-depth="0.20">
+        <img src="k3.png">
+    </div>
 </div>
 
 <div class="cs">coming soon</div>
 
+<script>
+var scene = document.getElementById('scene');
+var parallax = new Parallax(scene);
+document.getElementById('invert').onclick = function() {
+    parallax.invert(false, false);
+};
 
+</script>
 
 </body>
 
