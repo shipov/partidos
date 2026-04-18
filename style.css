@@ -12,6 +12,7 @@ body {
     right: 0;
     margin: auto;
     user-select: none;
+    width: 150px;
 }
 
 .kub {
